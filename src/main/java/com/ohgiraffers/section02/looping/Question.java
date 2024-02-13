@@ -45,12 +45,19 @@ public class Question {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("숫자를 입력해주세요.");
+
         int num = sc.nextInt();
+
         int multi = 1;
+
         for (int i = num ; i >= 1 ; i--) {
-            System.out.println("i :" +i);
-            System.out.println("multi : "+multi);
-            multi *= i;
+
+            System.out.println("i :" + i);
+            System.out.println("multi : "+ multi);
+
+            multi *= i;   // 누적해 저장하려고 만든 식 / i를 계속 곱해줘야 하기 때문에
+
+            // multi = multi * i
 
         }
 
